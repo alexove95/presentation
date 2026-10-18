@@ -130,6 +130,16 @@ body {
   background: rgba(39, 89, 190, .32);
 }
 
+.top-links .instagram-link {
+  border-color: rgba(231, 129, 164, .5);
+  background: rgba(169, 65, 105, .16);
+}
+
+.top-links .instagram-link:hover {
+  border-color: #e781a4;
+  background: rgba(169, 65, 105, .3);
+}
+
 .top-links svg {
   width: 17px;
   height: 17px;
@@ -398,7 +408,14 @@ main {
 @media (max-width: 640px) {
   .topbar { padding: 18px 20px; }
   .top-links { gap: 7px; }
-  .top-links a { min-height: 36px; gap: 6px; padding: 0 10px; font-size: .7rem; }
+  .top-links a {
+    width: 36px;
+    min-height: 36px;
+    gap: 0;
+    padding: 0;
+    font-size: 0;
+  }
+  .top-links a > span { display: none; }
   .top-links svg { width: 15px; height: 15px; }
   .chapter { min-height: 100svh; padding: 112px 28px 90px; }
   .chapter h1, .chapter h2 { font-size: clamp(3.3rem, 14vw, 5rem); }
@@ -429,6 +446,12 @@ main {
   .chapter-dock a { justify-content: center; padding: 10px 5px; }
   .dock-label { display: none; }
   .dock-number { font-size: .7rem; }
+}
+
+@media (max-width: 360px) {
+  .topbar { padding-right: 12px; padding-left: 12px; }
+  .brand { gap: 0; }
+  .brand > span:last-child { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
