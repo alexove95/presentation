@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="A 3D presentation of Alexandru Ovedenie's software development experience.">
+  <title>Alexandru Ovedenie — Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="showcase" aria-hidden="true"></canvas>
+  <div class="shade" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#intro" aria-label="Alexandru Ovedenie, introduction">
+      <span class="monogram" aria-hidden="true">AO</span>
+      <span>Alexandru Ovedenie</span>
+    </a>
+    <nav class="top-links" aria-label="Contact links">
+      <a href="mailto:alexove95@gmail.com">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <rect x="2.5" y="4" width="15" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/>
+          <path d="m3.5 5.5 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Email me
+      </a>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/alexandru-ovedenie-050113b7/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path fill="#70A5FF" d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.96V9.34h2.97v9.56ZM6.45 8.03a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.59 10.87h-2.97v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.76V9.34h2.85v1.31h.04c.4-.75 1.37-1.55 2.82-1.55 3.01 0 3.57 1.98 3.57 4.56v5.24Z"/>
+        </svg>
+        LinkedIn
+        <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="chapter" id="intro" data-material="silver" aria-labelledby="intro-title">
+      <div class="chapter-copy">
+        <p class="hobby-label">A personal experiment in AI-assisted web design</p>
+        <p class="chapter-index">01 / Software architecture</p>
+        <h1 id="intro-title">Building the<br><em>digital backbone.</em></h1>
+        <p class="chapter-description">I'm Alexandru Ovedenie, an experienced software developer in Bucharest. My expertise spans backend engineering, software architecture design, and dependable platform development. I build secure services that connect APIs, distributed processing, and data systems—and explore how AI can make creating software more imaginative.</p>
+      </div>
+      <figure class="chapter-image chapter-image--architecture">
+        <img src="software-architecture.svg" alt="Diagram of clients, an API gateway, backend services, an event queue, and databases connected as a software system" fetchpriority="high">
+        <figcaption>Architecture that connects every layer</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" id="ing" data-material="blue" aria-labelledby="ing-title">
+      <div class="chapter-copy">
+        <p class="chapter-index">02 / Banking platforms</p>
+        <h2 id="ing-title">Engineering<br><em>for trust.</em></h2>
+        <p class="chapter-description">Since 2023, I've been a software developer at ING Romania, building secure .NET microservices and APIs for everyday banking. My work spans containerized deployments, event-driven data processing, relational and in-memory databases, object storage, identity verification, and image processing—with a focus on protecting customer data and keeping services dependable.</p>
+        <ul class="chapter-tags" aria-label="Technologies and work areas">
+          <li>C# / .NET</li><li>REST &amp; SOAP APIs</li><li>Cloud microservices</li>
+          <li>Containers &amp; OpenShift</li><li>Apache Kafka</li><li>Redis</li>
+          <li>Microsoft SQL Server</li><li>Oracle Database</li><li>S3 object storage</li>
+          <li>IDV services</li><li>Image processing</li><li>Azure pipelines</li>
+          <li>Security &amp; quality gates</li><li>Data retention &amp; archiving</li>
+        </ul>
+      </div>
+      <figure class="chapter-image">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Illuminated server racks in a modern data center" loading="lazy">
+        <figcaption>Systems built to stay reliable</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" id="harman" data-material="emerald" aria-labelledby="harman-title">
+      <div class="chapter-copy">
+        <p class="chapter-index">03 / Platform development &amp; exchange services</p>
+        <h2 id="harman-title">Platforms &amp;<br><em>exchange services.</em></h2>
+        <p class="chapter-description">At HARMAN International (2019–2023), I created internal platforms, REST services, and automation, then built and maintained deployments across Windows and Linux.</p>
+        <ul class="chapter-tags" aria-label="Technologies and work areas">
+          <li>Platform development</li><li>Exchange services</li><li>Queue processing</li>
+          <li>Multithreaded processing</li><li>C# / .NET</li><li>PHP</li>
+          <li>C</li><li>C++</li><li>PowerShell &amp; Bash</li>
+          <li>Red Hat &amp; Ubuntu</li><li>Nginx</li>
+        </ul>
+      </div>
+      <figure class="chapter-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Colleagues collaborating around computers" loading="lazy">
+        <figcaption>Better tools, better teamwork</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" id="foundations" data-material="copper" aria-labelledby="foundations-title">
+      <div class="chapter-copy">
+        <p class="chapter-index">04 / Early career</p>
+        <h2 id="foundations-title">Software &amp;<br><em>firmware.</em></h2>
+        <p class="chapter-description">I studied electronics, telecommunications, and information technology at the University Politehnica of Bucharest. I joined Infineon Technologies as an Application System Engineer through a summer internship and continued working there alongside my studies, contributing to software and firmware development.</p>
+        <ul class="chapter-tags" aria-label="First role and education">
+          <li>Application System Engineer</li><li>Software development</li>
+          <li>Firmware development</li><li>Electronics &amp; telecommunications</li>
+          <li>University Politehnica of Bucharest</li>
+          <li>Romanian · English · French</li>
+        </ul>
+      </div>
+      <figure class="chapter-image">
+        <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Industrial robots working together on a production line" loading="lazy">
+        <figcaption>A foundation in engineering</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <nav class="chapter-dock" aria-label="Presentation chapters">
+    <a href="#intro" aria-current="step"><span class="dock-number">01</span><span class="dock-label">Architecture</span></a>
+    <a href="#ing"><span class="dock-number">02</span><span class="dock-label">Banking</span></a>
+    <a href="#harman"><span class="dock-number">03</span><span class="dock-label">Platforms &amp; services</span></a>
+    <a href="#foundations"><span class="dock-number">04</span><span class="dock-label">Early career</span></a>
+  </nav>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
