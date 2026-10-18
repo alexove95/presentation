@@ -60,7 +60,9 @@ body {
   justify-content: space-between;
   padding: 26px clamp(24px, 6vw, 88px);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
-  background: linear-gradient(180deg, rgba(9, 11, 16, .65), transparent);
+  background: rgba(9, 11, 16, .46);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .brand {
