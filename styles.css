@@ -391,14 +391,14 @@ main {
 }
 
 @media (max-width: 900px) {
-  .chapter-copy { width: min(100%, 390px); }
+  .chapter-copy { width: min(100%, 340px); }
   .chapter-description { max-width: 350px; }
   .chapter h1, .chapter h2 { font-size: clamp(3.1rem, 7vw, 4.6rem); }
   .chapter-image {
     top: auto;
-    right: 32px;
+    right: clamp(24px, 4vw, 32px);
     bottom: 13%;
-    width: min(38vw, 340px);
+    width: min(32vw, 300px);
     height: min(36vh, 300px);
     transform: none;
     opacity: .76;
