@@ -1,3 +1,5 @@
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.min.js";
+
 (() => {
   const chapters = [...document.querySelectorAll(".chapter")];
   const links = [...document.querySelectorAll(".chapter-dock a")];
@@ -36,7 +38,7 @@
 (() => {
   const canvas = document.querySelector("#showcase");
   const sections = [...document.querySelectorAll(".chapter")];
-  if (!canvas || !window.THREE || sections.length !== 4) return;
+  if (!canvas || sections.length !== 4) return;
 
   const renderer = new THREE.WebGLRenderer({
     canvas,
