@@ -155,8 +155,8 @@ main {
   position: relative;
   display: flex;
   min-height: 100svh;
-  align-items: center;
-  padding: 120px clamp(24px, 10vw, 150px) 90px;
+  align-items: flex-start;
+  padding: clamp(150px, 20vh, 190px) clamp(24px, 10vw, 150px) 90px;
   overflow: hidden;
   scroll-snap-align: start;
 }
@@ -197,13 +197,13 @@ main {
 .chapter-image {
   position: absolute;
   z-index: 1;
-  top: 50%;
+  top: auto;
   right: clamp(28px, 8vw, 120px);
+  bottom: clamp(100px, 12vh, 130px);
   width: clamp(260px, 34vw, 440px);
   height: clamp(220px, 32vw, 370px);
   margin: 0;
   overflow: hidden;
-  transform: translateY(-50%);
   border: 1px solid rgba(255, 255, 255, .2);
   border-radius: 5px;
   background: #11141e;
@@ -417,7 +417,7 @@ main {
   }
   .top-links a > span { display: none; }
   .top-links svg { width: 15px; height: 15px; }
-  .chapter { min-height: 100svh; padding: 112px 28px 90px; }
+  .chapter { min-height: 100svh; align-items: center; padding: 112px 28px 90px; }
   .chapter h1, .chapter h2 { font-size: clamp(3.3rem, 14vw, 5rem); }
   .chapter-description { max-width: 340px; }
   .chapter-image {
