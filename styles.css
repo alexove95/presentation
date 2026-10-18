@@ -396,8 +396,8 @@ main {
   .chapter h1, .chapter h2 { font-size: clamp(3.1rem, 7vw, 4.6rem); }
   .chapter-image {
     top: auto;
-    right: clamp(24px, 4vw, 32px);
-    bottom: 13%;
+    right: clamp(14px, 2.5vw, 20px);
+    bottom: 11.5%;
     width: min(32vw, 300px);
     height: min(36vh, 300px);
     transform: none;
