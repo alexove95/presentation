@@ -326,6 +326,7 @@ main {
 .chapter[data-material="blue"] { --accent: #709bff; }
 .chapter[data-material="emerald"] { --accent: #6fd5a4; }
 .chapter[data-material="copper"] { --accent: #e6a078; }
+.chapter[data-material="gold"] { --accent: #e6c578; }
 
 .chapter-dock {
   position: fixed;
@@ -378,6 +379,7 @@ main {
 .chapter-dock a:nth-child(2) { --dock-accent: #709bff; }
 .chapter-dock a:nth-child(3) { --dock-accent: #6fd5a4; }
 .chapter-dock a:nth-child(4) { --dock-accent: #e6a078; }
+.chapter-dock a:nth-child(5) { --dock-accent: #e6c578; }
 
 .dock-number {
   font-size: .62rem;
