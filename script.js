@@ -36,7 +36,7 @@
 (() => {
   const canvas = document.querySelector("#showcase");
   const sections = [...document.querySelectorAll(".chapter")];
-  if (!canvas || !window.THREE || sections.length !== 4) return;
+  if (!canvas || !window.THREE || sections.length === 0) return;
 
   const renderer = new THREE.WebGLRenderer({
     canvas,
@@ -173,7 +173,18 @@
   warmLight.shadow.bias = -0.0001;
   scene.add(warmLight, warmLight.target);
 
-  const materials = ["#d8dce5", "#315fe0", "#108451", "#b76337"].map(color => new THREE.Color(color));
+  const materialColors = {
+    silver: "#d8dce5",
+    blue: "#315fe0",
+    emerald: "#108451",
+    copper: "#b76337",
+    gold: "#e6c578"
+  };
+  const materials = sections.map(section => {
+    const color = materialColors[section.dataset.material];
+    if (!color) throw new Error(`Unknown chapter material: ${section.dataset.material}`);
+    return new THREE.Color(color);
+  });
   const targetColor = materials[0].clone();
   const currentColor = materials[0].clone();
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
